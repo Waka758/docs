@@ -20,21 +20,23 @@ WARNING:
 	[Rob Bast](https://github.com/alcohol), with [contributions](https://github.com/composer/docker/graphs/contributors) from the community.
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.3.8`, `2.3`, `2`, `latest`](https://github.com/composer/docker/blob/54c39d6ec46da77b0f7f73acf94ac15deb1926f1/2.3/Dockerfile)
--	[`2.2.15`, `2.2`](https://github.com/composer/docker/blob/54c39d6ec46da77b0f7f73acf94ac15deb1926f1/2.2/Dockerfile)
--	[`1.10.26`, `1.10`, `1`](https://github.com/composer/docker/blob/8dff639787c5813b916cd43c1543a6e987f1115b/1.10/Dockerfile)
+-	[`2.2.24`, `2.2`, `lts`](https://github.com/composer/docker/blob/2c5c50a862f17f2b0bdff0ef623ed5de853ba2a1/lts/Dockerfile)
+
+-	[`1.10.27`, `1.10`, `1`](https://github.com/composer/docker/blob/2c5c50a862f17f2b0bdff0ef623ed5de853ba2a1/legacy/Dockerfile)
+
+-	[`2.8.2`, `2.8`, `2`, `latest`](https://github.com/composer/docker/blob/327b1e8184e42fdb25262da9617a8c236eeed82c/latest/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues)
+	[https://github.com/composer/docker/issues](https://github.com/composer/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/), [`s390x`](https://hub.docker.com/r/s390x/composer/)
+	[`amd64`](https://hub.docker.com/r/amd64/composer/), [`arm32v6`](https://hub.docker.com/r/arm32v6/composer/), [`arm32v7`](https://hub.docker.com/r/arm32v7/composer/), [`arm64v8`](https://hub.docker.com/r/arm64v8/composer/), [`i386`](https://hub.docker.com/r/i386/composer/), [`ppc64le`](https://hub.docker.com/r/ppc64le/composer/), [`riscv64`](https://hub.docker.com/r/riscv64/composer/), [`s390x`](https://hub.docker.com/r/s390x/composer/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/composer/` directory](https://github.com/docker-library/repo-info/blob/master/repos/composer) ([history](https://github.com/docker-library/repo-info/commits/master/repos/composer))  

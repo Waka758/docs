@@ -20,34 +20,94 @@ WARNING:
 	[Keegan Witt (of the Groovy Project)](https://github.com/keeganwitt/docker-gradle), [with the Gradle Project's approval](https://discuss.gradle.org/t/official-docker-images/21159/8)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.2-jdk8`, `7.4-jdk8`, `7-jdk8`, `jdk8`, `7.4.2-jdk8-jammy`, `7.4-jdk8-jammy`, `7-jdk8-jammy`, `jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk8/Dockerfile)
--	[`7.4.2-jdk8-focal`, `7.4-jdk8-focal`, `7-jdk8-focal`, `jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk8-focal/Dockerfile)
--	[`7.4.2-jdk11`, `7.4-jdk11`, `7-jdk11`, `jdk11`, `7.4.2-jdk11-jammy`, `7.4-jdk11-jammy`, `7-jdk11-jammy`, `jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk11/Dockerfile)
--	[`7.4.2-jdk11-focal`, `7.4-jdk11-focal`, `7-jdk11-focal`, `jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk11-focal/Dockerfile)
--	[`7.4.2-jdk11-alpine`, `7.4-jdk11-alpine`, `7-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk11-alpine/Dockerfile)
--	[`7.4.2-jdk17`, `7.4-jdk17`, `7-jdk17`, `jdk17`, `7.4.2-jdk`, `7.4-jdk`, `7-jdk`, `jdk`, `7.4.2`, `7.4`, `7`, `latest`, `7.4.2-jdk17-jammy`, `7.4-jdk17-jammy`, `7-jdk17-jammy`, `jdk17-jammy`, `7.4.2-jdk-jammy`, `7.4-jdk-jammy`, `7-jdk-jammy`, `jdk-jammy`, `7.4.2-jammy`, `7.4-jammy`, `7-jammy`, `jammy`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk17/Dockerfile)
--	[`7.4.2-jdk17-focal`, `7.4-jdk17-focal`, `7-jdk17-focal`, `jdk17-focal`, `7.4.2-jdk-focal`, `7.4-jdk-focal`, `7-jdk-focal`, `jdk-focal`, `7.4.2-focal`, `7.4-focal`, `7-focal`, `focal`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk17-focal/Dockerfile)
--	[`7.4.2-jdk17-alpine`, `7.4-jdk17-alpine`, `7-jdk17-alpine`, `jdk17-alpine`, `7.4.2-jdk-alpine`, `7.4-jdk-alpine`, `7-jdk-alpine`, `jdk-alpine`, `7.4.2-alpine`, `7.4-alpine`, `7-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk17-alpine/Dockerfile)
--	[`7.4.2-jdk18`, `7.4-jdk18`, `7-jdk18`, `jdk18`, `7.4.2-jdk18-jammy`, `7.4-jdk18-jammy`, `7-jdk18-jammy`, `jdk18-jammy`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk18/Dockerfile)
--	[`7.4.2-jdk18-focal`, `7.4-jdk18-focal`, `7-jdk18-focal`, `jdk18-focal`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk18-focal/Dockerfile)
--	[`7.4.2-jdk18-alpine`, `7.4-jdk18-alpine`, `7-jdk18-alpine`, `jdk18-alpine`](https://github.com/keeganwitt/docker-gradle/blob/c250821d163836c1abfe6c31f59c466cf76d2f69/jdk18-alpine/Dockerfile)
--	[`6.9.2-jdk8`, `6.9-jdk8`, `6-jdk8`, `6.9.2-jdk8-jammy`, `6.9-jdk8-jammy`, `6-jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk8/Dockerfile)
--	[`6.9.2-jdk8-focal`, `6.9-jdk8-focal`, `6-jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk8-focal/Dockerfile)
--	[`6.9.2-jdk11`, `6.9-jdk11`, `6-jdk11`, `6.9.2-jdk11-jammy`, `6.9-jdk11-jammy`, `6-jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk11/Dockerfile)
--	[`6.9.2-jdk11-focal`, `6.9-jdk11-focal`, `6-jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk11-focal/Dockerfile)
--	[`6.9.2-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk11-alpine/Dockerfile)
--	[`6.9.2-jdk17`, `6.9-jdk17`, `6-jdk17`, `6.9.2-jdk`, `6.9-jdk`, `6-jdk`, `6.9.2`, `6.9`, `6`, `6.9.2-jdk17-jammy`, `6.9-jdk17-jammy`, `6-jdk17-jammy`, `6.9.2-jdk-jammy`, `6.9-jdk-jammy`, `6-jdk-jammy`, `6.9.2-jammy`, `6.9-jammy`, `6-jammy`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk17/Dockerfile)
--	[`6.9.2-jdk17-focal`, `6.9-jdk17-focal`, `6-jdk17-focal`, `6.9.2-jdk-focal`, `6.9-jdk-focal`, `6-jdk-focal`, `6.9.2-focal`, `6.9-focal`, `6-focal`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk17-focal/Dockerfile)
--	[`6.9.2-jdk17-alpine`, `6.9-jdk17-alpine`, `6-jdk17-alpine`, `6.9.2-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.2-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/61f288b37cad7c239861c2183bbd8c16301467a8/jdk17-alpine/Dockerfile)
+-	[`8.11.0-jdk8`, `8.11-jdk8`, `8-jdk8`, `jdk8`, `8.11.0-jdk8-jammy`, `8.11-jdk8-jammy`, `8-jdk8-jammy`, `jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk8/Dockerfile)
+
+-	[`8.11.0-jdk8-focal`, `8.11-jdk8-focal`, `8-jdk8-focal`, `jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk8-focal/Dockerfile)
+
+-	[`8.11.0-jdk8-corretto`, `8.11-jdk8-corretto`, `8-jdk8-corretto`, `jdk8-corretto`, `8.11.0-jdk8-corretto-al2023`, `8.11-jdk8-corretto-al2023`, `8-jdk8-corretto-al2023`, `jdk8-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk8-corretto/Dockerfile)
+
+-	[`8.11.0-jdk11`, `8.11-jdk11`, `8-jdk11`, `jdk11`, `8.11.0-jdk11-jammy`, `8.11-jdk11-jammy`, `8-jdk11-jammy`, `jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk11/Dockerfile)
+
+-	[`8.11.0-jdk11-focal`, `8.11-jdk11-focal`, `8-jdk11-focal`, `jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk11-focal/Dockerfile)
+
+-	[`8.11.0-jdk11-alpine`, `8.11-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk11-alpine/Dockerfile)
+
+-	[`8.11.0-jdk11-corretto`, `8.11-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.11.0-jdk11-corretto-al2023`, `8.11-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk11-corretto/Dockerfile)
+
+-	[`8.11.0-jdk17`, `8.11-jdk17`, `8-jdk17`, `jdk17`, `8.11.0-jdk17-jammy`, `8.11-jdk17-jammy`, `8-jdk17-jammy`, `jdk17-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk17/Dockerfile)
+
+-	[`8.11.0-jdk17-focal`, `8.11-jdk17-focal`, `8-jdk17-focal`, `jdk17-focal`, `8.11.0-jdk-focal`, `8.11-jdk-focal`, `8-jdk-focal`, `jdk-focal`, `8.11.0-focal`, `8.11-focal`, `8-focal`, `focal`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk17-focal/Dockerfile)
+
+-	[`8.11.0-jdk17-alpine`, `8.11-jdk17-alpine`, `8-jdk17-alpine`, `jdk17-alpine`, `8.11.0-jdk-alpine`, `8.11-jdk-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk17-alpine/Dockerfile)
+
+-	[`8.11.0-jdk17-corretto`, `8.11-jdk17-corretto`, `8-jdk17-corretto`, `jdk17-corretto`, `8.11.0-jdk17-corretto-al2023`, `8.11-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk17-corretto/Dockerfile)
+
+-	[`8.11.0-jdk17-graal`, `8.11-jdk17-graal`, `8-jdk17-graal`, `jdk17-graal`, `8.11.0-jdk-graal`, `8.11-jdk-graal`, `8-jdk-graal`, `jdk-graal`, `8.11.0-graal`, `8.11-graal`, `8-graal`, `graal`, `8.11.0-jdk17-graal-jammy`, `8.11-jdk17-graal-jammy`, `8-jdk17-graal-jammy`, `jdk17-graal-jammy`, `8.11.0-jdk-graal-jammy`, `8.11-jdk-graal-jammy`, `8-jdk-graal-jammy`, `jdk-graal-jammy`, `8.11.0-graal-jammy`, `8.11-graal-jammy`, `8-graal-jammy`, `graal-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk17-graal/Dockerfile)
+
+-	[`8.11.0-jdk21`, `8.11-jdk21`, `8-jdk21`, `jdk21`, `8.11.0-jdk21-jammy`, `8.11-jdk21-jammy`, `8-jdk21-jammy`, `jdk21-jammy`, `latest`, `8.11.0-jdk`, `8.11-jdk`, `8-jdk`, `jdk`, `8.11.0`, `8.11`, `8`, `8.11.0-jdk-jammy`, `8.11-jdk-jammy`, `8-jdk-jammy`, `jdk-jammy`, `8.11.0-jammy`, `8.11-jammy`, `8-jammy`, `jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk21/Dockerfile)
+
+-	[`8.11.0-jdk21-alpine`, `8.11-jdk21-alpine`, `8-jdk21-alpine`, `jdk21-alpine`, `8-jdk-alpine`, `jdk-alpine`, `8.11.0-alpine`, `8.11-alpine`, `8-alpine`, `alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk21-alpine/Dockerfile)
+
+-	[`8.11.0-jdk21-corretto`, `8.11-jdk21-corretto`, `8-jdk21-corretto`, `jdk21-corretto`, `corretto`, `8.11.0-jdk21-corretto-al2023`, `8.11-jdk21-corretto-al2023`, `8-jdk21-corretto-al2023`, `jdk21-corretto-al2023`, `corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk21-corretto/Dockerfile)
+
+-	[`8.11.0-jdk21-graal`, `8.11-jdk21-graal`, `8-jdk21-graal`, `jdk21-graal`, `8.11.0-jdk21-graal-jammy`, `8.11-jdk21-graal-jammy`, `8-jdk21-graal-jammy`, `jdk21-graal-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk21-graal/Dockerfile)
+
+-	[`8.11.0-jdk23`, `8.11-jdk23`, `8-jdk23`, `jdk23`, `8.11.0-jdk23-jammy`, `8.11-jdk23-jammy`, `8-jdk23-jammy`, `jdk23-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk23/Dockerfile)
+
+-	[`8.11.0-jdk23-alpine`, `8.11-jdk23-alpine`, `8-jdk23-alpine`, `jdk23-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk23-alpine/Dockerfile)
+
+-	[`8.11.0-jdk23-corretto`, `8.11-jdk23-corretto`, `8-jdk23-corretto`, `jdk23-corretto`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk23-corretto/Dockerfile)
+
+-	[`8.11.0-jdk23-graal`, `8.11-jdk23-graal`, `8-jdk23-graal`, `jdk23-graal`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk23-graal/Dockerfile)
+
+-	[`8.11.0-jdk-lts-and-current`, `8.11-jdk-lts-and-current`, `8-jdk-lts-and-current`, `jdk-lts-and-current`, `8.11.0-jdk-lts-and-current-jammy`, `8.11-jdk-lts-and-current-jammy`, `8-jdk-lts-and-current-jammy`, `jdk-lts-and-current-jammy`, `8.11.0-jdk-21-and-23`, `8.11-jdk-21-and-23`, `8-jdk-21-and-23`, `jdk-21-and-23`, `8.11.0-jdk-21-and-23-jammy`, `8.11-jdk-21-and-23-jammy`, `8-jdk-21-and-23-jammy`, `jdk-21-and-23-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk-lts-and-current/Dockerfile)
+
+-	[`8.11.0-jdk-lts-and-current-alpine`, `8.11-jdk-lts-and-current-alpine`, `8-jdk-lts-and-current-alpine`, `jdk-lts-and-current-alpine`, `8.11.0-jdk-21-and-23-alpine`, `8.11-jdk-21-and-23-alpine`, `8-jdk-21-and-23-alpine`, `jdk-21-and-23-alpine`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk-lts-and-current-alpine/Dockerfile)
+
+-	[`8.11.0-jdk-lts-and-current-corretto`, `8.11-jdk-lts-and-current-corretto`, `8-jdk-lts-and-current-corretto`, `jdk-lts-and-current-corretto`, `8.11.0-jdk-lts-and-current-corretto-al2023`, `8.11-jdk-lts-and-current-corretto-al2023`, `8-jdk-lts-and-current-corretto-al2023`, `jdk-lts-and-current-corretto-al2023`, `8.11.0-jdk-21-and-23-corretto`, `8.11-jdk-21-and-23-corretto`, `8-jdk-21-and-23-corretto`, `jdk-21-and-23-corretto`, `8.11.0-jdk-21-and-23-corretto-al2023`, `8.11-jdk-21-and-23-corretto-al2023`, `8-jdk-21-and-23-corretto-al2023`, `jdk-21-and-23-corretto-al2023`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk-lts-and-current-corretto/Dockerfile)
+
+-	[`8.11.0-jdk-lts-and-current-graal`, `8.11-jdk-lts-and-current-graal`, `8-jdk-lts-and-current-graal`, `jdk-lts-and-current-graal`, `8.11.0-jdk-lts-and-current-graal-jammy`, `8.11-jdk-lts-and-current-graal-jammy`, `8-jdk-lts-and-current-graal-jammy`, `jdk-lts-and-current-graal-jammy`, `8.11.0-jdk-21-and-23-graal`, `8.11-jdk-21-and-23-graal`, `8-jdk-21-and-23-graal`, `jdk-21-and-23-graal`, `8.11.0-jdk-21-and-23-graal-jammy`, `8.11-jdk-21-and-23-graal-jammy`, `8-jdk-21-and-23-graal-jammy`, `jdk-21-and-23-graal-jammy`](https://github.com/keeganwitt/docker-gradle/blob/e1ea9198e1be5dbd68d788ddc4c171f40010a46e/jdk-lts-and-current-graal/Dockerfile)
+
+-	[`7.6.4-jdk8`, `7.6-jdk8`, `7-jdk8`, `7.6.4-jdk8-jammy`, `7.6-jdk8-jammy`, `7-jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk8/Dockerfile)
+
+-	[`7.6.4-jdk8-focal`, `7.6-jdk8-focal`, `7-jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk8-focal/Dockerfile)
+
+-	[`7.6.4-jdk11`, `7.6-jdk11`, `7-jdk11`, `7.6.4-jdk11-jammy`, `7.6-jdk11-jammy`, `7-jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk11/Dockerfile)
+
+-	[`7.6.4-jdk11-focal`, `7.6-jdk11-focal`, `7-jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk11-focal/Dockerfile)
+
+-	[`7.6.4-jdk11-alpine`, `7.6-jdk11-alpine`, `7-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk11-alpine/Dockerfile)
+
+-	[`7.6.4-jdk17`, `7.6-jdk17`, `7-jdk17`, `7.6.4-jdk`, `7.6-jdk`, `7-jdk`, `7.6.4`, `7.6`, `7`, `7.6.4-jdk17-jammy`, `7.6-jdk17-jammy`, `7-jdk17-jammy`, `7.6.4-jdk-jammy`, `7.6-jdk-jammy`, `7-jdk-jammy`, `7.6.4-jammy`, `7.6-jammy`, `7-jammy`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk17/Dockerfile)
+
+-	[`7.6.4-jdk17-focal`, `7.6-jdk17-focal`, `7-jdk17-focal`, `7.6.4-jdk-focal`, `7.6-jdk-focal`, `7-jdk-focal`, `7.6.4-focal`, `7.6-focal`, `7-focal`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk17-focal/Dockerfile)
+
+-	[`7.6.4-jdk17-alpine`, `7.6-jdk17-alpine`, `7-jdk17-alpine`, `7.6.4-jdk-alpine`, `7.6-jdk-alpine`, `7-jdk-alpine`, `7.6.4-alpine`, `7.6-alpine`, `7-alpine`](https://github.com/keeganwitt/docker-gradle/blob/59c9fb1b24acf80a7da05dc2461c0f1b2b211527/jdk17-alpine/Dockerfile)
+
+-	[`6.9.4-jdk8`, `6.9-jdk8`, `6-jdk8`, `6.9.4-jdk8-jammy`, `6.9-jdk8-jammy`, `6-jdk8-jammy`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk8/Dockerfile)
+
+-	[`6.9.4-jdk8-focal`, `6.9-jdk8-focal`, `6-jdk8-focal`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk8-focal/Dockerfile)
+
+-	[`6.9.4-jdk11`, `6.9-jdk11`, `6-jdk11`, `6.9.4-jdk11-jammy`, `6.9-jdk11-jammy`, `6-jdk11-jammy`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk11/Dockerfile)
+
+-	[`6.9.4-jdk11-focal`, `6.9-jdk11-focal`, `6-jdk11-focal`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk11-focal/Dockerfile)
+
+-	[`6.9.4-jdk11-alpine`, `6.9-jdk11-alpine`, `6-jdk11-alpine`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk11-alpine/Dockerfile)
+
+-	[`6.9.4-jdk17`, `6.9-jdk17`, `6-jdk17`, `6.9.4-jdk`, `6.9-jdk`, `6-jdk`, `6.9.4`, `6.9`, `6`, `6.9.4-jdk17-jammy`, `6.9-jdk17-jammy`, `6-jdk17-jammy`, `6.9.4-jdk-jammy`, `6.9-jdk-jammy`, `6-jdk-jammy`, `6.9.4-jammy`, `6.9-jammy`, `6-jammy`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk17/Dockerfile)
+
+-	[`6.9.4-jdk17-focal`, `6.9-jdk17-focal`, `6-jdk17-focal`, `6.9.4-jdk-focal`, `6.9-jdk-focal`, `6-jdk-focal`, `6.9.4-focal`, `6.9-focal`, `6-focal`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk17-focal/Dockerfile)
+
+-	[`6.9.4-jdk17-alpine`, `6.9-jdk17-alpine`, `6-jdk17-alpine`, `6.9.4-jdk-alpine`, `6.9-jdk-alpine`, `6-jdk-alpine`, `6.9.4-alpine`, `6.9-alpine`, `6-alpine`](https://github.com/keeganwitt/docker-gradle/blob/5860d04d193e0a97c41d63a00f6eed1df67be293/jdk17-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues)
+	[https://github.com/keeganwitt/docker-gradle/issues](https://github.com/keeganwitt/docker-gradle/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gradle/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gradle/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gradle/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gradle/), [`s390x`](https://hub.docker.com/r/s390x/gradle/)
@@ -80,6 +140,10 @@ Run this from the directory of the Gradle project you want to build.
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
 If you are mounting a volume and the uid/gid running Docker is not *1000*, you should run as user *root* (`-u root`). *root* is also the default, so you can also simply not specify a user.
+
+## Java 21 support
+
+Java 21 does not currently support build customizations using Kotlin (such as using the `kotlin-dsl` plugin in a buildSrc script). Full support for Java 21 will come in a future Gradle release.
 
 # Image Variants
 

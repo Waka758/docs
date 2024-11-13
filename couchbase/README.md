@@ -20,24 +20,33 @@ WARNING:
 	[the Couchbase Docker Team](https://github.com/couchbase/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.1.0`, `enterprise-7.1.0`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/fdaa38c9abfb3e9ed81f622c0f9e91f8e6ba986f/enterprise/couchbase-server/7.1.0/x86_64/Dockerfile)
--	[`community-7.1.0`, `community`](https://github.com/couchbase/docker/blob/fdaa38c9abfb3e9ed81f622c0f9e91f8e6ba986f/community/couchbase-server/7.1.0/x86_64/Dockerfile)
--	[`7.0.3`, `enterprise-7.0.3`](https://github.com/couchbase/docker/blob/e3c274f39e02aa24e8dc7e486aefba916a7b747a/enterprise/couchbase-server/7.0.3/Dockerfile)
--	[`community-7.0.2`](https://github.com/couchbase/docker/blob/aec4494ab5280caf567997d72714f57572a6315b/community/couchbase-server/7.0.2/Dockerfile)
--	[`6.6.5`, `enterprise-6.6.5`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/enterprise/couchbase-server/6.6.5/Dockerfile)
--	[`community-6.6.0`](https://github.com/couchbase/docker/blob/aad4aa9714578906c0c993121654eaeba0bd907c/community/couchbase-server/6.6.0/Dockerfile)
+-	[`7.6.3`, `enterprise-7.6.3`, `enterprise`, `latest`](https://github.com/couchbase/docker/blob/553d1baa4aa90fe506e1d7bcdf4daec387a110fe/enterprise/couchbase-server/7.6.3/Dockerfile)
+
+-	[`community-7.6.2`, `community`](https://github.com/couchbase/docker/blob/34bb6684dc575f4e0b8b0f16127f5d4188015d8d/community/couchbase-server/7.6.2/Dockerfile)
+
+-	[`7.2.6`, `enterprise-7.2.6`](https://github.com/couchbase/docker/blob/857d7bcc814e241fd36aa4dc326dcab37e1d1e73/enterprise/couchbase-server/7.2.6/Dockerfile)
+
+-	[`community-7.2.4`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.2.4/Dockerfile)
+
+-	[`7.1.6`, `enterprise-7.1.6`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.1.6/Dockerfile)
+
+-	[`community-7.1.1`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.1.1/Dockerfile)
+
+-	[`7.0.5`, `enterprise-7.0.5`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/enterprise/couchbase-server/7.0.5/Dockerfile)
+
+-	[`community-7.0.2`](https://github.com/couchbase/docker/blob/8205e18d139813ac3f72f6dfef9ee9ffbc382e0f/community/couchbase-server/7.0.2/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues)
+	[https://github.com/couchbase/docker/issues](https://github.com/couchbase/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/couchbase/)
+	[`amd64`](https://hub.docker.com/r/amd64/couchbase/), [`arm64v8`](https://hub.docker.com/r/arm64v8/couchbase/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/couchbase/` directory](https://github.com/docker-library/repo-info/blob/master/repos/couchbase) ([history](https://github.com/docker-library/repo-info/commits/master/repos/couchbase))  
@@ -74,7 +83,7 @@ Here is how to get a single node Couchbase Server cluster running on Docker cont
 
 **Step - 1 :** Run Couchbase Server docker container
 
-`docker run -d --name db -p 8091-8097:8091-8097 -p 11210:11210 -p 11207:11207 -p 18091-18095:18091-18095 -p 18096:18096 -p 18097:18097 couchbase`
+`docker run -d --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase`
 
 Note: Couchbase Server can require a variety of ports to be exposed depending on the usage scenario. Please see https://docs.couchbase.com/server/current/install/install-ports.html for further information.
 
@@ -151,7 +160,7 @@ These ulimit settings are necessary when running under heavy load. If you are ju
 
 To set the ulimits in your container, you will need to run Couchbase Docker containers with the following additional `--ulimit` flags:
 
-`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091-8097:8091-8097 -p 11210:11210 -p 11207:11207 -p 18091-18095:18091-18095 -p 18096:18096 -p 18097:18097 couchbase`
+`docker run -d --ulimit nofile=40960:40960 --ulimit core=100000000:100000000 --ulimit memlock=100000000:100000000 --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase`
 
 Since "unlimited" is not supported as a value, it sets the core and memlock values to 100 GB. If your system has more than 100 GB RAM, you will want to increase this value to match the available RAM on the system.
 
@@ -216,7 +225,7 @@ Start Free Trial - https://cloud.couchbase.com/sign-up
 
 Couchbase Server comes in two editions: Enterprise Edition and Community Edition. You can find details on the differences between the two and licensing information on the [Couchbase Server Editions](https://docs.couchbase.com/server/current/introduction/editions.html) page.
 
--	**Enterprise Edition** -- The Enterprise Edition license provides for free for development and testing for Couchbase Enterprise Edition. A paid subscription for production deployment is required. Please refer to the [pricing](https://www.couchbase.com/pricing) page for details on Couchbase’s Enterprise Edition.
+-	**Enterprise Edition** -- The Enterprise Edition license provides for free for development and testing for Couchbase Enterprise Edition. A paid subscription for production deployment is required. Please refer to the [pricing](https://www.couchbase.com/pricing) page for details on Couchbase's Enterprise Edition.
 
 -	**Community Edition** -- The Community Edition license provides for free deployment of Couchbase Community Edition for departmental-scale deployments of up to five node clusters. It has recently been changed to disallow use of XDCR, which is now an exclusive Enterprise Edition feature.
 

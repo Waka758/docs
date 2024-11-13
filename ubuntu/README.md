@@ -17,20 +17,20 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Canonical](https://launchpad.net/cloud-images) and [Tianon (Debian Developer)](https://github.com/tianon/docker-brew-ubuntu-core)
+	[Canonical](https://launchpad.net/cloud-images)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20220531`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/bionic/Dockerfile)
--	[`20.04`, `focal-20220531`, `focal`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/focal/Dockerfile)
--	[`21.10`, `impish-20220531`, `impish`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/impish/Dockerfile)
--	[`22.04`, `jammy-20220531`, `jammy`, `latest`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/jammy/Dockerfile)
--	[`22.10`, `kinetic-20220602`, `kinetic`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/kinetic/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/trusty/Dockerfile)
--	[`16.04`, `xenial-20210804`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/fbca80af7960ffcca085d509c20f53ced1697ade/xenial/Dockerfile)
+-	[`20.04`, `focal-20241011`, `focal`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-focal-amd64-20241011-2dc0aae1&id=2dc0aae17c912aa6ae81e4c4bbc7277692d67bae)
+
+-	[`22.04`, `jammy-20240911.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20240911.1-b88de29a&id=b88de29aeed396f56b7eee0dd87e7249e7a8642f)
+
+-	[`24.04`, `noble-20241011`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20241011-494cd4d4&id=494cd4d4ce68c2299acaca9d1591e21c45279864)
+
+-	[`24.10`, `oracular-20241009`, `oracular`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-oracular-amd64-20241009-71a6e10d&id=71a6e10d9d17f0baa437a234367e8e16406bd3c2)
 
 # Quick reference (cont.)
 
@@ -38,7 +38,7 @@ WARNING:
 	[the cloud-images bug tracker](https://bugs.launchpad.net/cloud-images) (include the `docker` tag)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`i386`](https://hub.docker.com/r/i386/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`riscv64`](https://hub.docker.com/r/riscv64/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
+	[`amd64`](https://hub.docker.com/r/amd64/ubuntu/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ubuntu/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ubuntu/), [`ppc64le`](https://hub.docker.com/r/ppc64le/ubuntu/), [`riscv64`](https://hub.docker.com/r/riscv64/ubuntu/), [`s390x`](https://hub.docker.com/r/s390x/ubuntu/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ubuntu/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ubuntu) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ubuntu))  
@@ -59,11 +59,11 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 > [wikipedia.org/wiki/Ubuntu](https://en.wikipedia.org/wiki/Ubuntu)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ubuntu/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/2ac3caaf21dfba9734f20518971983edc617c77c/ubuntu/logo.png)
 
 # What's in this image?
 
-This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/oci/ for Bionic and later and https://partner-images.canonical.com/core/ for older releases).
+This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
 The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
@@ -81,9 +81,18 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 ENV LANG en_US.utf8
 ```
 
+## Unminimize
+
+Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
+
 # How is the rootfs built?
 
-The [tarballs published by Canonical](https://partner-images.canonical.com/oci/) are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`.
+The tarballs published by Canonical, referenced by `dist-*` tags in https://git.launchpad.net/cloud-images/+oci/ubuntu-base Git repository, are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`. The builds are run on Launchpad. For build history see `livefs` build pages of individual releases on Launchpad:
+
+-	[Focal](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/focal/ubuntu-oci)
+-	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
+-	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
+-	[Oracular](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/oracular/ubuntu-oci)
 
 # License
 
